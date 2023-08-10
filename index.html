@@ -12,13 +12,11 @@
         <img :class="gender" :src="picture" :alt="`$ {firstName} ${lastName}`"/>
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
-        <button on:click="getUser()" 
-        :class="gender">Get Random User</button>
+        <button :class="gender" @click="getUser()">Get Random User</button>
 
     </div>
 
-
-
+    <footer>Develop by Sameer Limbu</footer>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
 </body>
